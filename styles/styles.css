@@ -1,0 +1,40 @@
+.singbut{
+    background-color: green;
+    float: right;
+
+}
+.butalign{
+    float: right;
+}
+
+.singbut:hover{
+    background-color: black;
+}
+
+.logbut{
+    background-color: blue;
+    float: right;
+}
+
+.logbut:hover{
+    background-color: black;
+}
+
+.fondo{
+
+    float: right;
+}
+
+.logo{
+    
+    width: 400px;
+    /* height: 100px; */
+}
+
+.serie{
+    float: unset;
+}
+.serie:hover {
+    box-shadow: 15px 15px 10px 2px rgba(0,0,0,0.5);
+}
+
