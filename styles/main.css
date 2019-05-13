@@ -27,3 +27,12 @@ h1{
 .pass{
     font-size: 20px;
 }
+
+.style{
+    background-color: rgb(228, 225, 225);
+}
+
+.link-color{
+    color: aliceblue;
+}
+
