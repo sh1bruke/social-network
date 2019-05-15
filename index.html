@@ -12,22 +12,36 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!-- tittle -->
   <title>Social Network</title> 
+  
 </head>
-<body>
+<body class="back">
   <!-- primera fila -->
-  <div class="container-fluid fondo">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row linea">
         <!-- Dropdown menu -->
           <div class="dropdown col-1">
               <button class="btn btn-secondary " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-bars"></i>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <a class="dropdown-item" href="index.html">home</a>
-                    <a class="dropdown-item" href="#!">About</a>  
+                    <a class="dropdown-item" href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                    <a class="dropdown-item" href="notificaciones.html"><i class="fas fa-flag mr-2"></i>Notificaciones</a>
+                    <a class="dropdown-item" href="mensajes.html"><i class="far fa-envelope mr-2"></i>Mensajes</a>  
+                    <a class="dropdown-item" href="comunidades.html"><i class="fas fa-user-alt mr-2"></i> Comunidades</a>  
+                    <a class="dropdown-item" href="#!">
+                      <!-- <li class="dropdown-submenu">
+                        <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">3rd level dropdown</a></li>
+                          <li><a href="#">3rd level dropdown</a></li>
+                        </ul>
+                      </li> -->
+                    </a>  
               </div>
           </div>
-      <div class="col-11 butalign">
+          
+      <div class="col-sm-1 col-md-11 butalign">
+          <h3 class="texto"><i class="fas fa-film"></i> Series y Peliculas</h3>
         <!-- boton registro -->
         <a href="pages/signin.html">
           <button type="button" class="btn btn-primary singbut ml-2">Registarse</button>
@@ -37,20 +51,106 @@
         </a>
       </div>
     </div>  
-  
-    <!-- logo -->
-  
-    <div class="row">
-        <div class="col-6 offset-3">
-          <img src="images/banner.png" class="img-fluid" alt="">
+       <!-- tarjetas -->
+    <div class="row fondo">
+      
+      <div class="col-sm-1 col-md-12 offset-md-9 offset-sm-0">
+        <form action="input" class="left">
+            <input type="Search" placeholder="Buscar"> 
+            <h3 class="inline ml-2">
+                <i class="fas fa-search search"></i>
+            </h3>
+         </form>
+      </div>
+      <div class="col-sm-1 col-md-8 col-lg-6 offset-sm-0 offset-md-2 offset-lg-3 mt-5">
+        <div class="container-fluid">
+          <div class="row no-gutter">
+            <div class="col-sm-1 col-md-4">
+                <div class="card size borde-serie">
+                    <a href="Pages/friends.html">
+                    <img class="img-fluid card-img-top imgstyle serie borde-serie" src="images/friends.png" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                      <h4 class="card-title center">F.R.I.E.N.D.S</h4>
+                      <p class="card-text">
+                         un grupo de 4 amigos que te divertiran con sus alocadas aventuras mientras conviven juntos
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-1 col-md-4">
+                <div class="card size">
+                    <a href="Pages/breabad.html">
+                    <img class="img-fluid card-img-top imgstyle serie borde-serie" src="images/breabad.jpg" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                      <h4 class="card-title center">BREAKING BAD</h4>
+                      <p class="card-text center">
+                        Walter White, un profesor de quimica al cual se enferma de cancer y comienza a cocinar metanfetaminas para manter a su familia
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1  col-md-4">
+                <div class="card size">
+                    <a href="Pages/game.html">
+                    <img class="img-fluid card-img-top imgstyle serie borde-serie" src="images/game.jpeg" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                      <h4 class="card-title">GAME OF THRONES</h4>
+                      <p class="card-text">
+                          La trama de Game of Thrones está basada en la serie de novelas Canción de hielo y fuego​ y relata las vivencias de un grupo de personajes de distintas casas nobiliarias
+                      </p>
+                    </div>
+                  </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <!-- contenido -->
-    <div class="row">
-      <div class="col-6 offset-3">
-        <img src="images/breabad.jpg" class="serie" alt="">
+        <br>
+               <!-- tarjetas 2da linea -->
+          <div class="container-fluid">
+            <div class="row no-gutter">
+              <div class="col-sm-1 col-lg-4 col-md-2">
+                  <div class="card size borde-serie">
+                      <a href="Pages/viki.html">
+                      <img class="card-img-top imgstyle serie borde-serie" src="images/vikings.jpg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <h4 class="card-title center">VIKINGS</h4>
+                        <p class="card-text">
+                            Vikings es una serie que está basada en las leyendas sobre el vikingo Ragnar Lodbrok, uno de los héroes más famosos de la cultura nórdica que saqueó Northumbria, Francia y Bretaña
+                        </p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-1 col-lg-4 col-md-2">
+                  <div class="card size">
+                      <a href="Pages/call.html">
+                        <img class="card-img-top imgstyle serie borde-serie" src="images/call.jpg" alt="Card image cap">
+                      </a>
+                        <div class="card-body">
+                        <h4 class="card-title center">BETTER CALL SAUL</h4>
+                        <p class="card-text center">
+                            Precuela de Breaking Bad, la acción se ubica en el año 2002 en torno al abogado James Morgan "Jimmy" McGill
+                        </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-1 col-lg-4 col-md-2">
+                  <div class="card size">
+                      <a href="Pages/soprano.html">
+                      <img class="card-img-top imgstyle serie borde-serie" src="images/soprano.jpg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <h4 class="card-title">LOS SOPRANO</h4>
+                        <p class="card-text">
+                            La trama de la serie gira en torno al mafioso de Nueva Jersey Tony Soprano (James Gandolfini) y las dificultades que enfrenta tanto en su hogar como en la organización criminal que dirige
+                        </p>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -59,5 +159,14 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
 </body>
 </html>
