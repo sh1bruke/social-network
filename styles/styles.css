@@ -65,47 +65,11 @@
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-<<<<<<< HEAD
 }
 
 .center{
     text-align: center;
-}
 
-.back{
-    background-color: grey;
-}
-
-.inline{
-    display: inline-block;
-<<<<<<< HEAD
-}
-
-.search:hover {
-    text-shadow: 0px 2px 15px #CECECE;
-}
-
-.wcolor{
-    background-color: white;
-}
-
-=======
-}
-
-.search:hover {
-    text-shadow: 0px 2px 15px #CECECE;
-}
-
-.wcolor{
-    background-color: white;
-}
-
->>>>>>> d9fd285e6fffcf494c9cd630109f7e59ff5b0437
-=======
-}
-
-.center{
-    text-align: center;
 }
 
 .back{
@@ -124,7 +88,6 @@
     background-color: white;
 }
 
->>>>>>> d9fd285e6fffcf494c9cd630109f7e59ff5b0437
 .dropdown-submenu {
     position: relative;
   }
@@ -133,8 +96,6 @@
     top: 0;
     left: 100%;
     margin-top: -1px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   }
 
   .textbox{
@@ -149,9 +110,4 @@
 
   .butpost{
       float: inline-end;
-
-=======
->>>>>>> d9fd285e6fffcf494c9cd630109f7e59ff5b0437
-=======
->>>>>>> d9fd285e6fffcf494c9cd630109f7e59ff5b0437
   }
