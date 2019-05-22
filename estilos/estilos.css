@@ -1,5 +1,6 @@
 body {
-    background-image: url(../img/fondo.jpg);
+    background-color: #B1BBBC;
+    
 
 }
 
@@ -14,7 +15,7 @@ i {font-family: "comic-sans";
 
 }
 
-.botones {
+ /*.botones {
                 position: center;
                 left: 0;
                 top: 100px;
@@ -57,3 +58,76 @@ i {font-family: "comic-sans";
                 padding: 10px 60px;
                 border-radius: 80%;
             }   
+*/
+
+.connect {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-buttons {
+    display: inline-block;
+    min-width: 150px;
+    height: 50px;
+    margin: 0 5px 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 5px #000000;
+}
+    .a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px 15px;
+    }
+
+  .span {
+        font-size: 70px;
+        margin-left: 35px;
+  }
+
+
+.facebook {
+    @include linear-gradient(#415EA3, #2E4A88);
+    
+    &:hover {
+      @include linear-gradient(#3B5591, #2A437C);
+    }}
+
+  .a {
+        background: url(../img/fondoface.png) no-repeat 5% 10%;
+  }
+
+
+.twitter {
+    @include linear-gradient(#41C0F3, #3FBAEC);
+}
+  &:hover {
+        @include linear-gradient(#3EB1DF, #3EAAD6);
+    }
+
+  .a {
+        background: url(../img/fondopajaro.jpg) no-repeat 6% 25%;
+  }
+
+
+
+
+.button {
+      font-size: 1em;
+      border-radius: 8px;
+      padding: 10px;
+      border: 1px solid #59B969;
+      box-shadow: 0 1px 0 0 #60BD49 inset;
+      @include linear-gradient(#63E651, #42753E);
+      
+    &:hover {
+          @include linear-gradient(#51DB1C, #6BA061);
+      }
+}
+
+
+.red {
+    border-radius: 5px
+}
