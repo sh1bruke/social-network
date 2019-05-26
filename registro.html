@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,30 +10,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <script>
-            $(document).ready(function(){
-            var placeholder = null;
-            $('input[type=text]').focus(function(){
-            placeholder = $(this).attr("placeholder");
-            $(this).attr("placeholder","");
-            });
-            $('input[type=text]').blur(function(){
-            $(this).attr("placeholder", placeholder);
-            });
-            });
-        </script>
-
+        <script src="../social-network/script/jscript.js"></script>
     </head>
 
 <body class="text-center">
 
-  <div style="width:170px; height:170px; margin-left:5px">
+  <div class="h3 mb-3">
       <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consectetur optio dignissimos molestiae repellat, maxime expedita molestias magni ducimus illo, perferendis tenetur consequuntur ipsam, dicta nesciunt ratione explicabo iusto eum.</p>
   </div>
 
   <form class="form-signin" action="#" method="post" enctype="text/plain">
       
-      <!--<img class="mb-4" src="../social-network/img/cassett.jpg" alt="" width="62" height="42">-->
+      <   --<img class="mb-4" src="../social-network/img/cassett.jpg" alt="" width="62" height="42">
       <h1 class="h3 mb-3">Registrese:</h1>
 
         <label for="inputname" class="sr-only">Ingrese su Nombre</label>
@@ -48,7 +37,7 @@
         <input type="password" id="inputPassword" class="form-control" placeholder="Elija una contraseña" required="">
         
         <label for="confirmpassword" class="sr-only">Repita su contraseña</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Repita su contraseña" required="">
+        <input type="password" id="inputPassword2" class="form-control" placeholder="Repita su contraseña" required="">
       <br>
       
 
@@ -97,7 +86,7 @@
                               <div class="col-4"> <a href="http://www.google.com" target="_blank" class="icon2"> Google </a></div>
                               <div class="col-4"> <a href="http://www.Twiter.com" target="_blank" class="icon3">Twiter </a></div>
                             </div>
-                          </div> -->
+                          </div> 
 
 
 
@@ -120,3 +109,72 @@
         
 
 </html>
+          -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../social-network/script/jscript.js"></script>
+  <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+  
+
+
+          <div class="main">
+            <div class="one">
+              <div class="register">
+                <h3>Create your account</h3>
+                <form id="reg-form">
+                  <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" spellcheck="false" placeholder="Shridhar Deshmukh"/>
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" spellcheck="false" placeholder="shridhardeshmukh@xyz.com"/>
+                  </div>
+                  <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" spellcheck="false" placeholder="shree33" />
+                  </div>
+                  <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" />
+                  </div>
+                  <div>
+                    <label for="password-again">Password Again</label>
+                    <input type="password" id="password-again" />
+                  </div>
+                  <div>
+                    <label></label>
+                    <input type="submit" value="Create Account" id="create-account" class="button"/>
+                  </div>
+                </form>
+                <div class="sep">
+                  <span class="or">Tambien:</span>
+                </div>
+                <br>
+                <div class="connect">
+                  <div class="social-buttons facebook">
+                    <a href="#">
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                  <div class="social-buttons twitter">
+                    <a href="#">
+                      <span>Twitter</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </body>
+        </html>
