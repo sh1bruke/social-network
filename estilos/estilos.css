@@ -1,174 +1,39 @@
-/* 
-body {
-    background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat, repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: rgb(255, 255, 255);
-    text-shadow:  -1px 1px 0 rgba(255, 254, 254, 0.822);
-    
-
+.button{
+	cursor: pointer;
 }
 
-form {
-    display: inline-block;
-    margin: 5px 87.5px 1px 87.5px;
-    padding: 15px;
-
-}
-
-
-
-i {font-family: "comic-sans";
-
-}
-
- /*.botones {
-                position: center;
-                left: 0;
-                top: 100px;
-                z-index: 1000;
-                font-family: "comic-sans";
-               
-                font-size: 20px;
-            }
-                
-            .botones {
-                list-style: none;
-            }
-                
-            .botones a {
-                color:#fff;
-                background: #000;
-                border-radius: 40%;
-                padding: 5px 5px;
-                text-decoration: none;
-                -webkit-transition:all 800ms ease;
-                -o-transition:all 800ms ease;
-                transition:all 800ms ease;
-            }
-                
-            .botones .icon1 {
-                background:#3b5998;
-                margin: 1px -480px 1px 0px;
-            }
-            .botones .icon2 {background: #d95232;}
-            .botones .icon3 {
-                background: #00abf0;
-                margin: 1px 5px 1px -530px;
-            }
-
-            
-            
-                
-            .botones a:hover {
-                background: rgb(150, 194, 192);
-                padding: 10px 60px;
-                border-radius: 80%;
-            }   
-*/
-/*
-.connect {
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.social-buttons {
-    display: inline-block;
-    min-width: 150px;
-    height: 50px;
-    margin: 0 5px 10px;
-    border-radius: 10px;
-    text-shadow: 1px 1px 5px #000000;
-}
-    .a {
-        display: block;
-        height: 100%;
-        text-decoration: none;
-        color: #FFFFFF;
-        padding: 10px 15px;
-    }
-
-  .span {
-        font-size: 70px;
-        margin-left: 35px;
-  }
-
-
-
- 
-
-
-
- 
-
-
-
-
-.button {
-      font-size: 1em;
-      border-radius: 8px;
-      padding: 10px;
-      border: 1px solid #59B969;
-      box-shadow: 0 1px 0 0 #60BD49 inset;
-      @include linear-gradient(#63E651, #42753E);
-    }
-    &:hover {
-          @include linear-gradient(#51DB1C, #6BA061);
-      }
-}
-
-
-
-
-u {
-    text-shadow:  -1px 1px 0 #000;
-
-}
-
-*/
-
-@import "compass/css3";
-
-$back-color: #F0F0F0;
-$green-border: #72B372;
-
-@mixin linear-gradient($top, $bottom) {
-    background: $top;
-    background: -webkit-linear-gradient($top, $bottom);
-	background: -moz-linear-gradient($top, $bottom);
-	background: -o-linear-gradient($top, $bottom);
-	background: linear-gradient($top, $bottom);
+/*fondo*/
+html {
+	height:100%;
+	width:100%;
 }
 
 body {
+	height:100%;
+	width:100%;
     background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat, repeat;
-    background-position: center;
+    background-repeat: no-repeat fixed center;
     background-size: cover;
-    position: relative;
-    display: flex;
-  
 }
+/*------------------------*/
 
+
+/* Registro */
 .register {
-background-color: #FFFFFF;
-
-  	width: 500px;
-  	margin: 10px 80% auto;
+	background-color: rgba(255, 255, 255, 0.61);
+	width: 390px;
+  	margin: 10% auto;
   	padding: 10px;
-  	border: 7px solid $green-border;
+  	border: 2px solid;
   	border-radius: 10px;
   	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  color: #444;
-  	background-color: $back-color;
-  	box-shadow: 0 0 20px 0 #000000;}
+	color: #444;
+	box-shadow: 0 0 20px 0 #000000;
+}
   	
-  h3 {
+  	h3 {
 	  	margin: 0 15px 20px;
-	  	border-bottom: 2px solid $green-border;
+	  	border-bottom: 2px solid;
 	  	padding: 5px 10px 5px 0;
 	  	font-size: 1.1em;
 	}
@@ -194,88 +59,148 @@ background-color: #FFFFFF;
   		background: rgba(0, 0, 0, 0.07);
 	}
   
-  input[type=text]:focus, input[type=password]:focus{
-		background: #FFFFFF;
-	}
 
 	.button {
   		font-size: 1em;
   		border-radius: 8px;
-  		padding: 10px;
-  		border: 1px solid #59B969;
-  		box-shadow: 0 1px 0 0 #60BD49 inset;
-  		@include linear-gradient(#63E651, #42753E);
-  		
-		&:hover {
-  			@include linear-gradient(#51DB1C, #6BA061);
-  		}
-	}
+		padding: 5px 5px;
+		margin: 0px 0px 20px 0px;  
+		border: 1px solid rgb(141, 141, 141);
+		box-shadow: 0 1px 0 0 rgb(115, 116, 114) inset;
+  	}
 	
 	.sep {
-	  	border: 1px solid $green-border;
+	  	border: none;
 	  	position: relative;
 	  	margin: 35px 20px;
 	}
 
 	.or {
 	  	position: absolute;
-	  	width: 40px;
+	  	width: 30%;
 	 	left: 50%;
-	  	background: $back-color;
 	  	text-align: center;
-	  	margin: -10px 0 0 -25px;
+	  	margin: -35px 0 0 -38px;
 	  	line-height: 10px;
 	}
 
-	.connect {
-	  	width: 400px;
-	  	margin: 0 auto;
-	  	text-align: center;
-	}
-
-	.social-buttons {
-	  	display: inline-block;
-	  	min-width: 150px;
-	  	height: 50px;
-	  	margin: 0 5px 10px;
-	  	border-radius: 10px;
-	  	text-shadow: 1px 1px 5px #000000;
-    }
-    	a {
-	  		display: block;
-	  		height: 100%;
-	  		text-decoration: none;
-	  		color: #FFFFFF;
-	  		padding: 10px 15px;
+	a {
+		display: block;
+		height: 100%;
+		text-decoration: none;
+		color: #FFFFFF;
+		padding: 10px 15px;
 		}
 
-		span {
-	  		font-size: 30px;
-	  		margin-left: 35px;
-		}
-	
-
-	.facebook {
-	  	linear-gradient(#415EA3, #2E4A88);
-    }
-	  	&:hover {
-			@include linear-gradient(#3B5591, #2A437C);
-		}
-
-		a {
-	  		background: url(../images/logo_fb_31x42.png) no-repeat 5% 10%;
-		}
-	}
-
-	.twitter {
-	  	@include linear-gradient(#41C0F3, #3FBAEC);
-	  	
-		&:hover {
-	  		@include linear-gradient(#3EB1DF, #3EAAD6);
-	  	}
-
-		a {
-	  		background: url(../images/logo_twitter_38x32.png) no-repeat 6% 25%;
-		}
+	span {
+		font-size: 30px;
+		margin-left: 35px;
 	}
 }
+/*------------------------*/
+
+
+
+/* Container de redes sociales*/
+.container {
+	left: 50%;
+	margin: -86px 200px 0 -103px;
+	position: absolute;
+	top: 50%; 
+}
+
+	/* Facebook */
+	.fb-bg {
+		background: #3b5998;
+		display: block;
+		height: 47px;
+		margin: 0 0 30px 41px;
+		width: 166px; 
+	}
+
+	.fb-bg:after {
+		color: #fff;
+		content: "Facebook";
+		font-family: 'Oswald', sans-serif;
+		height: 47px;
+		left: 8%;
+		position: relative;
+		text-transform: uppercase;
+		top: 22%;
+		width: 41px; 
+	}
+
+	.fb-bg:hover{
+	cursor: pointer;
+	}
+
+	.fb-bg:active{
+	background: #354f88;
+	}
+
+
+
+	/* Twitter */
+	.twi-bg {
+		background: #45b0e3;
+		height: 37px;
+		margin: 0 0 30px 41px;
+		width: 166px; 
+	}
+	
+	.twi-bg:after {
+		color: #fff;
+		content: "Twitter";
+		font-family: 'Oswald', sans-serif;
+		height: 37px;
+		left: 11%;
+		position: relative;
+		text-transform: uppercase;
+		top: 22%;
+		width: 41px; 
+	}
+
+	.twi-bg:hover {
+	cursor: pointer;
+	}
+
+	.twi-bg:active {
+	background: #40a2d1;
+	}
+
+
+
+	/* Google */
+	.g-bg {
+		background: #de4c34;
+		height: 37px;
+		margin-left: 41px;
+		width: 166px; 
+	}
+	
+	.g-bg:after {
+		color: #fff;
+		content: "Google";
+		font-family: 'Oswald', sans-serif;
+		height: 37px;
+		left: 10%;
+		position: relative;
+		text-transform: uppercase;
+		top: 22%;
+		width: 41px; 
+	}
+
+	.g-bg:hover {
+	cursor: pointer;
+	}
+
+	.g-bg:active {
+		background: #ce3e26;
+	}
+
+
+.centrado {
+	margin: 0px 0px 0px 40%; 
+	display: block;
+}
+
