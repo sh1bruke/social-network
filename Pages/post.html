@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- tittle -->
+  <title>Social Network</title> 
+  
+</head>
+<body class="back">
+    <!-- ==========================================================================================
+                            INICIO DE BARRA SUPERIOR
+===============================================================================================-->
+  <!-- primera fila -->
+  <div class="container-fluid">
+    <div class="row linea">
+        <!-- Dropdown menu -->
+          <div class="dropdown col-1">
+              <button class="btn btn-secondary " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-bars"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <a class="dropdown-item" href="../index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                    <a class="dropdown-item" href="notificaciones.html"><i class="fas fa-flag mr-2"></i>Notificaciones</a>
+                    <a class="dropdown-item" href="mensajes.html"><i class="far fa-envelope mr-2"></i>Mensajes</a>  
+                    <a class="dropdown-item" href="comunidades.html"><i class="fas fa-user-alt mr-1"></i> Comunidades</a>  
+                    <a class="dropdown-item" href="post.html"><i class="far fa-bookmark mr-3"></i>Post</a>  
+              </div>
+          </div>
+          
+      <div class="col-sm-1 col-md-11 butalign">
+          <h3 class="texto"><i class="fas fa-film"></i> Series y Peliculas</h3>
+        <!-- boton registro -->
+        <a href="pages/signin.html">
+          <button type="button" class="btn btn-primary singbut ml-2">Registarse</button>
+        </a>
+        <a href="pages/login.html">
+          <button type="button" class="btn btn-primary logbut">Iniciar Sesion</button>
+        </a>
+      </div>
+    </div>  
+  </div>
+  <div class="col-sm-1 col-md-3 offset-md-9 offset-sm-0">
+    <form action="input" class="left">
+        <input type="Search" placeholder="Buscar" id="search"> 
+          <h3 class="inline ml-2">
+          <i class="fas fa-search search"></i>
+          </h3>
+     </form>
+  </div>
+<!-- ==========================================================================================
+                            FIN DE BARRA SUPERIOR
+===============================================================================================-->
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-4 col-sm-1">
+        <form>
+            <h2 class="texto2">Titulo:</h2>
+            <input type="text" id="Titulo" class="titlebox">
+              <h2 class="texto2">Mensaje:</h2>
+              <textarea type="text" id="Mensaje" class="textbox"></textarea>
+              <br>
+        </form>
+        <button class="butpost mr-4" id="bsend">send</button>
+
+      </div>  
+      <div class="col-md-7 col-sm-1" id="post">
+        <br>
+        <br>
+      </div>
+  </div>
+      <br>
+  <div class="row">
+      
+      </div>
+  </div>
+  
+</div>
+      
+      
+  </div>    
+</div>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
