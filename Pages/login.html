@@ -2,17 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Series y Peliculas - Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="../images/favicon.ico" />
+
+
 
 <script src="../scripts/main.js" ></script> 
 </head>
 
-  <body background="../images/spiderman-2013-2958.jpg">
+  <body background="../images/spiderman-2013-2958.jpg" class="back">
+      <!-- primera fila -->
+      <div class="container-fluid">
+        <div class="row linea">
+            <!-- Dropdown menu -->
+              <div class="dropdown col-1">
+                  <button class="btn btn-secondary " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" href="../index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                        <a class="dropdown-item" href="notific.html"><i class="fas fa-flag mr-2"></i>Notificaciones</a>
+                        <a class="dropdown-item" href="mensajes.html"><i class="far fa-envelope mr-2"></i>Mensajes</a>  
+                        <a class="dropdown-item" href="comunidades.html"><i class="fas fa-user-alt mr-1"></i> Comunidades</a>  
+                        <a class="dropdown-item" href="../Pages/post.html"><i class="far fa-bookmark mr-3"></i>Post</a>  
+                        <!-- <a class="dropdown-item" href="#!"> -->
+                          <!-- <li class="dropdown-submenu">
+                            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">3rd level dropdown</a></li>
+                              <li><a href="#">3rd level dropdown</a></li>
+                            </ul>
+                          </li> -->
+                        </a>  
+                  </div>
+              </div>
+              
+          <div class="col-sm-1 col-md-11 butalign">
+              <h3 class="texto"><i class="fas fa-film"></i> Series y Peliculas</h3>
+            <!-- boton registro -->
+            <!-- <a href="pages/signin.html">
+              <button type="button" class="btn btn-primary singbut ml-2" id="sig">Registarse</button>
+            </a>
+            <a href="pages/login.html">
+              <button type="button" class="btn btn-primary logbut"id="log">Iniciar Sesion</button>
+            </a> -->
+          </div>
+        </div>  
     <h1>Login</h1>
     <br>
     <br>
@@ -41,9 +84,9 @@
 <div class="container">
   <div class="row">
     <div class="col-10">
-<button type="button" class="btn btn-outline-secondary offset-6 style" id="buttonlog" >Ingresar</button>
+<button type="button" class="btn btn-outline-secondary offset-7 style" id="buttonlog" >Ingresar</button>
 <br>
-<a href="../Pages/forgetpassword" target="_blank" class="offset-3 link-color">¿Has olvidado tu contraseña?</a>
+<a href="../Pages/forgetpassword" target="_blank" class="offset-4 link-color">¿Has olvidado tu contraseña?</a>
 <a href="../Pages/signin.html" target="_blank" class="offset-2 link-color">¿No estás registrado? Registrate </a>
 
 </div>
