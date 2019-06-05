@@ -1,5 +1,8 @@
+
 $(document).ready(function(){
 
+
+  // pagina post //
     $("#bsend").click(function(){
       $("#post").append(
         '<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">' +
@@ -18,4 +21,30 @@ $(document).ready(function(){
       '</div>'     
       );
     })
+    //fin de pagina post//
+
+
+    //botton login//
+    $("#buttonlog").click(function(){
+      var usuario = "hola";
+      var password = "alabama";
+      var inputUsuario = $("#input-user").val()
+      var inputpassword = $("#input-password").val()
+      
+      if (inputUsuario ==="" || 
+          inputpassword === ""){
+            alert("completa los campos"); 
+      } else{
+        
+      if(inputUsuario === "hola" && inputpassword === "alabama") {
+          alert("usuario correcto"); 
+          window.location.href = "../index.html"
+      }
+       else {
+      alert("usuario incorrecto"); 
+      }}  
+  })
+    //fin de boton login//
+
+  
 })
