@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro</title>
+  <script src="../script/jscript.js"></script>
+  <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+
+
+
+<body>
+  <div class="main">
+    <div class="one">
+      <div class="register">
+        <h3>Creà tu Cuenta</h3>
+
+          <form name="formulario" id="reg-form">
+            <div>
+              <label for="name">Nombre</label>
+              <input type="text" id="name" spellcheck="false" name="nombre" placeholder="Cosme fulanito" required minlength="3" maxlength="30"/>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="text" id="email" spellcheck="false" name="correo" placeholder="cosmefu@hotmail.com/gmail.com" required minlength="3" maxlength="30" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+            </div>
+
+            <div>
+              <label for="username">Usuario</label>
+              <input type="text" id="username" spellcheck="false" name="usuario" placeholder="Usuario" required minlength="3" maxlength="30">
+            </div>
+
+            <div>
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" title="letras y/o numeros. 6 digitos" name="pass"placeholder="MiContraseña" required  pattern=".{6,}" >
+            </div>
+
+            <div>
+              <label for="password-again">Repita Cont</label>
+              <input type="password" id="password-again" name="pass"placeholder="MiContraseña" required  pattern=".{6,}"  >
+            </div>
+
+            <div>
+              <label></label>
+              <input type="submit" value="Crear Cuenta" class="button" onclick="crearCuenta()">
+            </div>
+          </form>
+
+        
+        <div class="sep">
+          <span class="or">Tambien:</span>
+        
+          <div class="container">
+              <div class="fb-bg centrado"></div>
+              <div class="twi-bg centrado"></div>
+              <div class="g-bg centrado"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
