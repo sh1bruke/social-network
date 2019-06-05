@@ -1,0 +1,206 @@
+.button{
+	cursor: pointer;
+}
+
+/*fondo*/
+html {
+	height:100%;
+	width:100%;
+}
+
+body {
+	height:100%;
+	width:100%;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat fixed center;
+    background-size: cover;
+}
+/*------------------------*/
+
+
+/* Registro */
+.register {
+	background-color: rgba(255, 255, 255, 0.61);
+	width: 390px;
+  	margin: 10% auto;
+  	padding: 10px;
+  	border: 2px solid;
+  	border-radius: 10px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	box-shadow: 0 0 20px 0 #000000;
+}
+  	
+  	h3 {
+	  	margin: 0 15px 20px;
+	  	border-bottom: 2px solid;
+	  	padding: 5px 10px 5px 0;
+	  	font-size: 1.1em;
+	}
+
+	div{
+		
+	  	border : none;
+	}
+
+	label {
+	  	display: inline-block;
+	  	width: 25%;
+	  	text-align: right;
+	  	margin: 10px
+	}
+
+	input[type=text], input[type=password]{
+  		width: 65%; 
+  		font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+  		padding: 5px;
+  		font-size: 0.9em;
+  		border-radius: 5px;
+  		background: rgba(0, 0, 0, 0.07);
+	}
+  
+
+	.button {
+  		font-size: 1em;
+  		border-radius: 8px;
+		padding: 5px 5px;
+		margin: 0px 0px 20px 0px;  
+		border: 1px solid rgb(141, 141, 141);
+		box-shadow: 0 1px 0 0 rgb(115, 116, 114) inset;
+  	}
+	
+	.sep {
+	  	border: none;
+	  	position: relative;
+	  	margin: 35px 20px;
+	}
+
+	.or {
+	  	position: absolute;
+	  	width: 30%;
+	 	left: 50%;
+	  	text-align: center;
+	  	margin: -35px 0 0 -38px;
+	  	line-height: 10px;
+	}
+
+	a {
+		display: block;
+		height: 100%;
+		text-decoration: none;
+		color: #FFFFFF;
+		padding: 10px 15px;
+		}
+
+	span {
+		font-size: 30px;
+		margin-left: 35px;
+	}
+}
+/*------------------------*/
+
+
+
+/* Container de redes sociales*/
+.container {
+	left: 50%;
+	margin: -86px 200px 0 -103px;
+	position: absolute;
+	top: 50%; 
+}
+
+	/* Facebook */
+	.fb-bg {
+		background: #3b5998;
+		display: block;
+		height: 47px;
+		margin: 0 0 30px 41px;
+		width: 166px; 
+	}
+
+	.fb-bg:after {
+		color: #fff;
+		content: "Facebook";
+		font-family: 'Oswald', sans-serif;
+		height: 47px;
+		left: 8%;
+		position: relative;
+		text-transform: uppercase;
+		top: 22%;
+		width: 41px; 
+	}
+
+	.fb-bg:hover{
+	cursor: pointer;
+	}
+
+	.fb-bg:active{
+	background: #354f88;
+	}
+
+
+
+	/* Twitter */
+	.twi-bg {
+		background: #45b0e3;
+		height: 37px;
+		margin: 0 0 30px 41px;
+		width: 166px; 
+	}
+	
+	.twi-bg:after {
+		color: #fff;
+		content: "Twitter";
+		font-family: 'Oswald', sans-serif;
+		height: 37px;
+		left: 11%;
+		position: relative;
+		text-transform: uppercase;
+		top: 22%;
+		width: 41px; 
+	}
+
+	.twi-bg:hover {
+	cursor: pointer;
+	}
+
+	.twi-bg:active {
+	background: #40a2d1;
+	}
+
+
+
+	/* Google */
+	.g-bg {
+		background: #de4c34;
+		height: 37px;
+		margin-left: 41px;
+		width: 166px; 
+	}
+	
+	.g-bg:after {
+		color: #fff;
+		content: "Google";
+		font-family: 'Oswald', sans-serif;
+		height: 37px;
+		left: 10%;
+		position: relative;
+		text-transform: uppercase;
+		top: 22%;
+		width: 41px; 
+	}
+
+	.g-bg:hover {
+	cursor: pointer;
+	}
+
+	.g-bg:active {
+		background: #ce3e26;
+	}
+
+
+.centrado {
+	margin: 0px 0px 0px 40%; 
+	display: block;
+}
+
